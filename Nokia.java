@@ -375,9 +375,56 @@ switch (selected) {
         case 5:
             System.out.println(tones);
             System.out.println("Select menu options: ");
+            int tonesSettingSelected = input.nextInt();
+            switch (tonesSettingSelected) {
+              case 1:
+                  System.out.println("Ringing tone");
+                  break;
+              case 2:
+                  System.out.println("Ringing volume");
+                  break;
+              case 3:
+                  System.out.println("Incoming call alert");
+                  break;
+              case 4:
+                  System.out.println("Composer");
+                  break;
+              case 5:
+                  System.out.println("Message alert tone");
+                  break;
+              case 6:
+                  System.out.println("Keypad tones");
+                  break;
+              case 7:
+                  System.out.println("Warning and game tones");
+                  break;
+              case 8:
+                  System.out.println("Vibrating alert");
+                  break;
+              case 9:
+                  System.out.println("Screen saver");
+                  break;
+                };
+            break;
         case 6:
             System.out.println(settings);
             System.out.println("Select menu options: ");
+            int tonesSettingSelected = input.nextInt();
+            switch (tonesSettingSelected) {
+              case 1:
+                  System.out.println(callSettings);
+                  break;
+              case 2:
+                  System.out.println();
+                  break;
+              case 3:
+                  System.out.println();
+                  break;
+              case 4:
+                  System.out.println("Restore factory settings");
+                  break;
+                };
+            break;
         case 7:
             System.out.println("Call divert");
         case 8:
@@ -393,7 +440,6 @@ switch (selected) {
             System.out.println("Profiles");
         case 13:
             System.out.println("SIM services");
-            System.out.println("Select menu options: ");
            
         }
     }
