@@ -409,16 +409,82 @@ switch (selected) {
         case 6:
             System.out.println(settings);
             System.out.println("Select menu options: ");
-            int tonesSettingSelected = input.nextInt();
-            switch (tonesSettingSelected) {
+            int settingSelected = input.nextInt();
+            switch (settingSelected) {
               case 1:
                   System.out.println(callSettings);
-                  break;
+                  System.out.println("Select menu options: ");
+                  int callSettingSelected = input.nextInt();
+                  switch (callSettingSelected) {
+                    case 1:
+                        System.out.println("Automatic redial");
+                        break;
+                    case 2:
+                        System.out.println("Speed dialling");
+                        break;
+                    case 3:
+                        System.out.println("Call waiting options");
+                        break;
+                    case 4:
+                        System.out.println("Own number sending");
+                        break;
+                    case 5:
+                        System.out.println("Phone line in use");
+                        break;
+                    case 6:
+                        System.out.println("Automatic answer");
+                        break;
+                    };
+                    break;
               case 2:
-                  System.out.println();
-                  break;
+                  System.out.println(phoneSettings);
+                  System.out.println("Select menu options: ");
+                  int phoneSettingSelected = input.nextInt();
+                  switch (phoneSettingSelected) {
+                    case 1:
+                        System.out.println("Language");
+                        break;
+                    case 2:
+                        System.out.println("Cell info display");
+                        break;
+                    case 3:
+                        System.out.println("Welcome note");
+                        break;
+                    case 4:
+                        System.out.println("Network selection");
+                        break;
+                    case 5:
+                        System.out.println("Lights");
+                        break;
+                    case 6:
+                        System.out.println("Confirm SIM service actions");
+                        break;
+                    };
+                    break;
               case 3:
-                  System.out.println();
+                  System.out.println(securitySettings);
+                  System.out.println("Select menu options: ");
+                  int securitySettingSelected = input.nextInt();
+                  switch (securitySettingSelected) {
+                    case 1:
+                        System.out.println("PIN code request");
+                        break;
+                    case 2:
+                        System.out.println("Call barring service");
+                        break;
+                    case 3:
+                        System.out.println("Fixed dialling");
+                        break;
+                    case 4:
+                        System.out.println("Closed user group");
+                        break;
+                    case 5:
+                        System.out.println("Phone security");
+                        break;
+                    case 6:
+                        System.out.println("Change access codes");
+                        break;
+                    };
                   break;
               case 4:
                   System.out.println("Restore factory settings");
@@ -436,6 +502,28 @@ switch (selected) {
         case 11:
             System.out.println(clockMenu);
             System.out.println("Select menu options: ");
+                  int phoneSettingSelected = input.nextInt();
+                  switch (phoneSettingSelected) {
+                    case 1:
+                        System.out.println("Alarm Clock");
+                        break;
+                    case 2:
+                        System.out.println("Clock settings");
+                        break;
+                    case 3:
+                        System.out.println("Date setting");
+                        break;
+                    case 4:
+                        System.out.println("Stopwatch");
+                        break;
+                    case 5:
+                        System.out.println("Countdown timer");
+                        break;
+                    case 6:
+                        System.out.println("Auto update of date and time");
+                        break;
+                    };
+                  break;
         case 12:
             System.out.println("Profiles");
         case 13:
