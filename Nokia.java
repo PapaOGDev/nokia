@@ -212,7 +212,7 @@ switch (selected) {
                 int settingOptionSelected = input.nextInt();
                 switch (settingOptionSelected) {
                 case 1 -> {
-                    System.out.println(showCallDurationOption);
+                    System.out.println(setOneOption);
                     System.out.println("Select menu options: ");
                     int messageSettingOptionSelected = input.nextInt();
                     switch (messageSettingOptionSelected) {
@@ -253,7 +253,7 @@ switch (selected) {
             case 3 -> System.out.println("Dialled numbers");
             case 4 -> System.out.println("Erase recent call lists");
             case 5 -> {
-                System.out.println(callRegister);
+                System.out.println(showCallDurationOption);
                 System.out.println("Select menu options: ");
                 int callDurationOptionSelected = input.nextInt();
                 switch (callDurationOptionSelected) {
@@ -284,6 +284,7 @@ switch (selected) {
                   case 1 -> System.out.println("Call cost limit");
                   case 2 -> System.out.println("Show costs in");
                   default -> System.out.println("Select a valid option");
+
                     };
               }
             case 8 -> System.out.println("Prepaid credit");
