@@ -98,17 +98,17 @@ Options
 2.  Reply via same centre
 3.  Character support
 """;
-        String callRegisterOption = """
-Call Register
-1.  Missed calls
-2.  Received calls
-3.  Dialled numbers
-4.  Erase recent call lists
-5.  Show call duration
-6.  Show call costs
-7.  Call cost settings
-8.  Prepaid credit
-""";
+//        String callRegisterOption = """
+//Call Register
+//1.  Missed calls
+//2.  Received calls
+//3.  Dialled numbers
+//4.  Erase recent call lists
+//5.  Show call duration
+//6.  Show call costs
+//7.  Call cost settings
+//8.  Prepaid credit
+//""";
         String showCallDurationOption = """
 Show call duration
 1.  Last call duration
@@ -253,7 +253,7 @@ switch (selected) {
             case 3 -> System.out.println("Dialled numbers");
             case 4 -> System.out.println("Erase recent call lists");
             case 5 -> {
-                System.out.println(callRegisterOption);
+                System.out.println(callRegister);
                 System.out.println("Select menu options: ");
                 int callDurationOptionSelected = input.nextInt();
                 switch (callDurationOptionSelected) {
