@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Nokia{
+public class NokiaReversed{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 //        int selected;
@@ -192,7 +192,6 @@ switch (selected) {
                     }
                 case 9 -> System.out.println("Speed dials...");
                 case 10 -> System.out.println("Voice tags...");
-                default -> System.out.println("Select a valid option");
             };
         }
         case 2 -> {
@@ -213,13 +212,12 @@ switch (selected) {
                 switch (settingOptionSelected) {
                 case 1 -> {
                     System.out.println(showCallDurationOption);
-                    System.out.println("Select menu options: ");
+                    System.out.println("Select menu options: "); -> 
                     int messageSettingOptionSelected = input.nextInt();
                     switch (messageSettingOptionSelected) {
                     case 1 -> System.out.println("Message center number");
                     case 2 -> System.out.println("Message sent as");
                     case 3 -> System.out.println("Message validity");
-                    default -> System.out.println("Select a valid option");
                     };
                 }
                 case 2 -> {
@@ -230,7 +228,6 @@ switch (selected) {
                     case 1 -> System.out.println("Delivery Report");
                     case 2 -> System.out.println("Reply via same center");
                     case 3 -> System.out.println("Character support");
-                    default -> System.out.println("Select a valid option");
                     };
                 }
                  };
@@ -238,7 +235,6 @@ switch (selected) {
             case 8 -> System.out.println("Info service...");
             case 9 -> System.out.println("Voice mailbox number...");
             case 10 -> System.out.println("Service command editor...");
-            default -> System.out.println("Select a valid option");
 
             };
         }
@@ -251,19 +247,27 @@ switch (selected) {
             case 1 -> System.out.println("Missed calls");
             case 2 -> System.out.println("Recieved calls");
             case 3 -> System.out.println("Dialled numbers");
-            case 4 -> System.out.println("Erase recent call lists");
+            case 4 -> System.out.println("Erase recent call lists");\
+              }
+            
             case 5 -> {
                 System.out.println(callRegisterOption);
                 System.out.println("Select menu options: ");
                 int callDurationOptionSelected = input.nextInt();
                 switch (callDurationOptionSelected) {
+                case 1 -> {
+                    System.out.println(showCallDurationOption);
+                    System.out.println("Select menu options: ");
+                    int showCallDurationOptionSelected = input.nextInt();
+                    switch (showCallDurationOptionSelected) {
                     case 1 -> System.out.println("Last call duration");
                     case 2 -> System.out.println("All calls' duration");
                     case 3 -> System.out.println("Receive calls' duration");
                     case 4 -> System.out.println("Dialed calls' duration");
                     case 5 -> System.out.println("Clear timers");
-                    default -> System.out.println("Select a valid option");
                         };
+                }
+                    };
               }
             case 6 -> {
                 System.out.println(showCallCost);
@@ -273,7 +277,6 @@ switch (selected) {
                   case 1 -> System.out.println("Last call cost");
                   case 2 -> System.out.println("All call's cost");
                   case 3 -> System.out.println("Clear counters");
-                  default -> System.out.println("Select a valid option");
                     };
              }
             case 7 -> {
@@ -283,14 +286,10 @@ switch (selected) {
                 switch (callCostSettingSelected) {
                   case 1 -> System.out.println("Call cost limit");
                   case 2 -> System.out.println("Show costs in");
-                  default -> System.out.println("Select a valid option");
                     };
-              }
+            };
             case 8 -> System.out.println("Prepaid credit");
-            default -> System.out.println("Select a valid option");
-
-            }
-        }
+        };
         case 5 -> {
             System.out.println(tones);
             System.out.println("Select menu options: ");
@@ -305,9 +304,8 @@ switch (selected) {
               case 7 -> System.out.println("Warning and game tones");
               case 8 -> System.out.println("Vibrating alert");
               case 9 -> System.out.println("Screen saver");
-              default -> System.out.println("Select a valid option");
                 };
-        }
+         }
         case 6 -> {
             System.out.println(settings);
             System.out.println("Select menu options: ");
@@ -324,7 +322,6 @@ switch (selected) {
                     case 4 -> System.out.println("Own number sending");
                     case 5 -> System.out.println("Phone line in use");
                     case 6 -> System.out.println("Automatic answer");
-                    default -> System.out.println("Select a valid option");
                     };
                 }
               case 2 -> {
@@ -338,7 +335,6 @@ switch (selected) {
                     case 4 -> System.out.println("Network selection");
                     case 5 -> System.out.println("Lights");
                     case 6 -> System.out.println("Confirm SIM service actions");
-                    default -> System.out.println("Select a valid option");
                     };
                 }
               case 3 -> {
@@ -352,13 +348,11 @@ switch (selected) {
                     case 4 -> System.out.println("Closed user group");
                     case 5 -> System.out.println("Phone security");
                     case 6 -> System.out.println("Change access codes");
-                    default -> System.out.println("Select a valid option");
                     };
                 }
               case 4 -> System.out.println("Restore factory settings");
-              default -> System.out.println("Select a valid option");
                 };
-            }
+        }
         case 7 -> System.out.println("Call divert");
         case 8 -> System.out.println("Games");
         case 9 -> System.out.println("Calculator");
@@ -374,12 +368,10 @@ switch (selected) {
                     case 4 -> System.out.println("Stopwatch");
                     case 5 -> System.out.println("Countdown timer");
                     case 6 -> System.out.println("Auto update of date and time");
-                    default -> System.out.println("Select a valid option");
                     };
             }
         case 12 -> System.out.println("Profiles");
         case 13 -> System.out.println("SIM services");
-        default -> System.out.println("Select a valid option");
            
         }
     }
